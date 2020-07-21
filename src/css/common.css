@@ -1,0 +1,64 @@
+body {
+    padding: 30px;
+}
+
+.row-hidden {
+    display: none;
+}
+
+textarea.form-control {
+    width: 196px;
+}
+
+.table-date {
+    width: 90px;
+}
+
+td {
+    word-break: break-all;
+}
+
+.form-control {
+    width: auto;
+}
+
+.container-sort {
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+}
+
+.clear-button {
+    margin: 20px 0;
+}
+
+
+th.sorted[data-order="1"],
+th.sorted[data-order="-1"] {
+    position: relative;
+}
+
+th.sorted[data-order="1"]::after,
+th.sorted[data-order="-1"]::after {
+    right: -8px;
+    position: absolute;
+}
+th {
+    background: #ddd ;
+
+}
+th.sorted[data-order="-1"]::after {
+    content: "▼"
+}
+
+th.sorted[data-order="1"]::after {
+    content: "▲"
+}
+
+.btn-submit {
+    margin-top: 10px;
+}
+
+#container-reviews div {
+    padding: 5px 0;
+}
